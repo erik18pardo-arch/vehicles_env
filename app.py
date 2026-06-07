@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 st.header('Visualización del Mercado de Autos Usados')
 # Leer los datos del archivo CSV
-car_data = pd.read_csv('/Users/colibri/Desktop/Proy7/vehicles_env/vehicles_us.csv')
+car_data = pd.read_csv('vehicles_us.csv')
 
 # Crear un botón en la aplicación Streamlit
 hist_button = st.checkbox('Construir histograma')
