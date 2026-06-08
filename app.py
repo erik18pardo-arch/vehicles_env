@@ -29,5 +29,5 @@ build_disper = st.checkbox('Construir un grafico de dispersión')
 
 if build_disper:
     st.write('Construyendo un grafico de dispersión...')
-    fig = go.Figure(data=[go.Scatter(x=car_data['odometer'], y=car_data['price'])])
+    fig = go.Figure(data=[go.Scatter(x=car_data['odometer'], y=car_data['price'], mode= 'markers')])
     st.plotly_chart(fig, use_container_width=True)
